@@ -13,7 +13,6 @@ This project presents a smart waste segregation system that uses a Convolutional
 
 The project was developed during a one-month internship at Netlip IT Training & Solutions. The aim is to enhance environmental sustainability through intelligent automation of waste sorting, improving the efficiency of disposal and recycling systems.
 
----
 
 ## 🚀 Technologies Used
 
@@ -24,7 +23,6 @@ The project was developed during a one-month internship at Netlip IT Training & 
 * NumPy & Pandas
 * Matplotlib for visualization
 
----
 
 ## 🧠 CNN Model Summary
 
@@ -42,7 +40,6 @@ The project was developed during a one-month internship at Netlip IT Training & 
 * **Optimizer:** Adam
 * **Validation Accuracy:** \~95%
 
----
 
 ## 📁 Dataset Information
 
@@ -51,7 +48,7 @@ The project was developed during a one-month internship at Netlip IT Training & 
 * Images are resized and normalized
 * Augmentation applied: rotation, flip, zoom
 
-```python
+```pytho
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 train_datagen = ImageDataGenerator(rescale=1./255,
@@ -60,8 +57,6 @@ train_datagen = ImageDataGenerator(rescale=1./255,
                                    horizontal_flip=True,
                                    validation_split=0.2)
 ```
-
----
 
 ## 📊 Model Evaluation
 
@@ -73,7 +68,6 @@ model.evaluate(test_generator)
 * **Metrics Used:** Accuracy, Confusion Matrix, Precision, Recall
 * **Loss:** Low categorical crossentropy on validation
 
----
 
 ## 💻 Streamlit Web App Features
 
@@ -91,7 +85,6 @@ label = "Organic" if np.argmax(prediction) == 0 else "Recyclable"
 st.success(f"Predicted as: {label}")
 ```
 
----
 
 ## 📈 Sample Prediction
 
@@ -100,7 +93,6 @@ st.success(f"Predicted as: {label}")
 | Banana Peel    | Organic         | 97%        |
 | Plastic Bottle | Recyclable      | 94%        |
 
----
 
 ## 📎 Folder Structure
 
@@ -117,7 +109,6 @@ st.success(f"Predicted as: {label}")
 └── README.md
 ```
 
----
 
 ## 💡 Future Enhancements
 
